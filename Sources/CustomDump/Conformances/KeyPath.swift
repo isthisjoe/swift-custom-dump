@@ -1,4 +1,4 @@
-#if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+#if DEBUG && os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
   extension AnyKeyPath: CustomDumpStringConvertible {
     public var customDumpDescription: String {
       guard let name = keyPathToName[self] else {
